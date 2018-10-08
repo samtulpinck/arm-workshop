@@ -3,6 +3,19 @@
     "contentVersion": "1.0.0.0",
     "parameters": {},
     "variables": {},
-    "resources": [],
+    "resources": [
+        {
+            "type": "Microsoft.Storage/storageAccounts",
+            "name": "satu-stg-acct",
+            "apiVersion": "2015-06-15",
+            "location": "[resourceGroup().location]",
+            "tags": {
+                "displayName": "satu-stg-acct"
+            },
+            "properties": {
+                "accountType": "Standard_LRS"
+            }
+        }
+    ],
     "outputs": {}
 }
